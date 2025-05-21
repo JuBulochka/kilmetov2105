@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Каталог товаров</title>
+</head>
+<body>
+    <div class="container">
+        <div class="catalog" id="catalog">
+        </div>
+        <div class="modal-overlay" id="cart-modal">
+          <div class="cart-modal">
+            <div class="korzina">
+              <div class="order-form">
+                <p class="form-title">Оформить заказа</p>
+                <p class="contact">Введите свои контактные данные, и наш <br> менеджер свяжется с Вами в течении 1 часа</p>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Введите ваш телефон">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address" placeholder="Введите адрес доставки">
+                </div>
+                <button class="zakaz-btn">Заказать</button>
+                <div class="btd">
+                <p class="bot-text">Натискаючи "Підтвердити замовлення", Ви даєте <br>згоду на обробку Ваших персональних даних</p>
+              </div>
+            </div>
+            <div class="palka-vniz"></div>
+            <div class="ks">
+              <div class="korz-title">
+              <div class="cart-header">
+                  <div class="cart-title form-title">Корзина</div>
+                  <div class="cart-total contact">Всего: <span id="total-amount">0.00</span></div>
+                  
+              </div>
+              <button class="close-btn" id="close-cart"><img src="./img/close.png" alt=""></button>
+            </div>
+              
+              <div class="cart-items" id="cart-items">
+                  <div class="empty-cart">Корзина пуста</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
